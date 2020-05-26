@@ -11,8 +11,7 @@ using namespace std;
 int main ()
 {
 
-    int n;
-    cin >>n;
+    int n=11;
     std::vector<int> a;
 
     a.reserve(64);
