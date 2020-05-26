@@ -2,8 +2,8 @@ language: cpp
 sudo: false # only for faster builds
 script:
   - g++ main.cpp -o main
-  - ./hello
-  - gcov hello.c
+  - ./main
+  - gcov main.cpp
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
