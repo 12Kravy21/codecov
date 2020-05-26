@@ -2,7 +2,7 @@ language: cpp
 script:
   - g++ main.cpp -o main
   - ./main
-  - gcov main.cpp
+  - gcov main.cpp.gcno
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
