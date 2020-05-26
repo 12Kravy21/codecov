@@ -6,5 +6,4 @@ script:
   - gcov main.cpp
 
 after_success:
-    export CODECOV_TOKEN="1d61c72a-7625-48c4-a52e-573154e93865"
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t 1d61c72a-7625-48c4-a52e-573154e93865
