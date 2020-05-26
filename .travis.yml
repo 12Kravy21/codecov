@@ -1,6 +1,6 @@
 language: cpp
 script:
-  - g++ -coverage main.cpp -o main
+  - g++ -coverage main.cpp -o main -std=c++11
   - ./main
   - gcov main.cpp
 
